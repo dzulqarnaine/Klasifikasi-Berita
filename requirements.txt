@@ -1,9 +1,6 @@
-matplotlib==3.10.3
-numpy
-pandas
-Pillow==11.2.1
-scikit_learn==1.7.0
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.2
 seaborn==0.13.2
 streamlit==1.43.0
-streamlit_option_menu==0.4.0
-tensorflow==2.15.0
+tensorflow==2.16.1
