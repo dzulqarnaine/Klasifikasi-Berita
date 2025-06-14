@@ -1,6 +1,4 @@
-streamlit==1.40.1
-tensorflow==2.16.1
-numpy
+streamlit
+tensorflow
 scikit-learn
-pillow
-streamlit-option-menu
+pandas
