@@ -6,14 +6,14 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 
 # Muat model
-model = keras.models.load_model('/assets/model.h5')
+model = keras.models.load_model('./assets/model.h5')
 
 # Muat tokenizer
-with open('/assets/tokenizer.pickle', 'rb') as handle:
+with open('./assets/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 # Muat encoder
-with open('/assets/encoder.pickle', 'rb') as handle:
+with open('./assets/encoder.pickle', 'rb') as handle:
     encoder = pickle.load(handle)
 
 # Konfigurasi halaman
@@ -44,14 +44,14 @@ def halaman_penjelasan():
     """, unsafe_allow_html=True)
 
     # Path ke gambar
-    image_paths = ["/assets/bbc.jpeg"]
+    image_paths = ["./assets/bbc.jpeg"]
     
     descriptions = [
         """BBC (British Broadcasting Corporation) adalah salah satu media penyiaran terbesar dan paling kredibel di dunia, yang menyediakan berita berkualitas tinggi dengan cakupan global. Berita-berita yang dihasilkan BBC mencakup berbagai topik seperti bisnis, teknologi, politik, olahraga, dan hiburan, yang ditulis dengan gaya profesional dan informatif. Berita-berita ini tidak hanya menjadi sumber informasi penting bagi masyarakat umum, tetapi juga menjadi rujukan dalam analisis media dan penelitian akademis. Dengan volume berita yang terus meningkat, pengelolaan dan pengklasifikasian konten berita secara otomatis menjadi semakin penting untuk mempermudah akses dan analisis."""
     ]
 
     # Gambar baru yang ingin ditambahkan di bawah deskripsi
-    new_image_path = "/assets/nlp.jpg"  
+    new_image_path = "./assets/nlp.jpg"  
 
     # Tampilkan gambar dan penjelasan menggunakan layout kolom
     for i in range(len(image_paths)):
